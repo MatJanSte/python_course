@@ -132,15 +132,47 @@
 #
 # print aString
 ###################################3
-a = 5.234
-formatedString = "Wartosc zmiennej a=%f" % a
-print formatedString
-
-formatedString = "Wartosc zmiennej a=%.2f" % a
-print formatedString
-
-
-b = 12
-print "Wartosc zmiennej b = %03d" % b
-
-print "Trzy sformatowane kolejne cyfry to %f-%02d-%.2f" % (1.25312, 2, 2.35495)
+# a = 5.234
+# formatedString = "Wartosc zmiennej a=%f" % a
+# print formatedString
+#
+# formatedString = "Wartosc zmiennej a=%.2f" % a
+# print formatedString
+#
+#
+# b = 12
+# print "Wartosc zmiennej b = %03d" % b
+#
+# print "Trzy sformatowane kolejne cyfry to %f-%02d-%.2f" % (1.25312, 2, 2.35495)
+def zadanie2(list1, list2):
+    # type your code
+    x  = 0
+    clist = []
+    if len(list1) > len(list2):
+        for i in range(len(list2)):
+            clist.append(list1[i])
+            clist.append(list2[i])
+            x += 1
+        for j in range(len(list1)):
+            if j < x:
+                pass
+            else:
+                clist.append(list1[j])
+                pass
+            pass
+        pass
+    else:
+        for i in range(len(list1)):
+            clist.append(list1[i])
+            clist.append(list2[i])
+            x += 1
+        for j in range(len(list2)):
+            if j < x:
+                pass
+            else:
+                clist.append(list2[j])
+                pass
+            pass
+        pass
+    print clist
+    pass

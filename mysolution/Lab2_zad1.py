@@ -33,3 +33,39 @@ def test(fun, *args):
     pass
 
     test(zadanie1, [1, 2, 3, 3, 5, 68, 68, 24], [1, 2, 3, 5, 68, 24])
+
+    def zadanie2(list1, list2):
+        # type your code
+        x = 0
+        clist = []
+        if len(list1) > len(list2):
+            for i in range(len(list2)):
+                clist.append(list1[i])
+                clist.append(list2[i])
+                x += 1
+            for j in range(len(list1)):
+                if j < x:
+                    pass
+                else:
+                    clist.append(list1[j])
+                    pass
+                pass
+            pass
+        else:
+            for i in range(len(list1)):
+                clist.append(list1[i])
+                clist.append(list2[i])
+                x += 1
+            for j in range(len(list2)):
+                if j < x:
+                    pass
+                else:
+                    clist.append(list2[j])
+                    pass
+                pass
+            pass
+        print clist
+        pass
+
+
+    test(zadanie2, [1, 2, 19, 'dd', ':P', ":("], [12, 'c', '5'], [1, 12, 2, 'c', 19, '5', 1, 2, 19, 'dd', ':P', ':('])
