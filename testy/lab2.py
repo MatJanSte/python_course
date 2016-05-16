@@ -104,5 +104,43 @@
 # print bList
 
 ##############
-aTuple = (1, 2, 'cos')
+#aTuple = (1, 2, 'cos')
+####################################
+# aString = "Uwielbiam pisac w Pythonie"
+#
+# print "Liczba znakow to w zdaniu", len(aString)
+#
+# print "Trzeci znak to ", aString[2]
+#
+# for znak in aString:
+#     print znak
+####################################
+# aString = "Uwielbiam"
+# aString += " pisac"
+#
+# print aString + " w Pythonie"
+###################################
+# aString = "Uwielbiam pisac w Pythonie"
+#
+# print "5 pierwszych znakow to " + aString[:5]
+# print "A 8 ostatnich to "+ aString[-8:]
+#
+# a = 1
+# b = 2.2
+#
+# aString = "Liczba a =" + str(a) + ", a liczba b = " + str(b)
+#
+# print aString
+###################################3
+a = 5.234
+formatedString = "Wartosc zmiennej a=%f" % a
+print formatedString
 
+formatedString = "Wartosc zmiennej a=%.2f" % a
+print formatedString
+
+
+b = 12
+print "Wartosc zmiennej b = %03d" % b
+
+print "Trzy sformatowane kolejne cyfry to %f-%02d-%.2f" % (1.25312, 2, 2.35495)
