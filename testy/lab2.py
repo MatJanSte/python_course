@@ -177,3 +177,39 @@
 #     print clist
 #     pass
 #############################################################
+# def zadanie3(listTuples):
+#     # type your code
+#     alist, blist, clist = listTuples
+#     a = len(alist) - 1
+#     b = len(blist) - 1
+#     c = len(clist) - 1
+#     dlist = []
+#     if alist[a] < blist[b]:
+#         if alist[a] < clist[c]:
+#             dlist.append(alist)
+#             if clist[c] < blist[b]:
+#                 dlist.append(clist)
+#                 dlist.append(blist)
+#             else:
+#                 dlist.append(blist)
+#                 dlist.append(clist)
+#         else:
+#             dlist.append(clist)
+#             dlist.append(alist)
+#             dlist.append(blist)
+#     else:
+#         if blist[b] < clist[c]:
+#             dlist.append(blist)
+#             if alist[a] < clist[c]:
+#                 dlist.append(alist)
+#                 dlist.append(clist)
+#             else:
+#                 dlist.append(clist)
+#                 dlist.append(alist)
+#         else:
+#             dlist.append(clist)
+#             dlist.append(blist)
+#             dlist.append(alist)
+#     pass
+# zadanie3([(1, 3), (3, 3, 2), (2, 1)])
+# #test(zadanie3, [(1, 3), (3, 3, 2), (2, 1)], [(2, 1), (3, 3, 2), (1, 3)])
