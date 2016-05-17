@@ -99,6 +99,6 @@ def zadanie3(listTuples):
             dlist.append(clist)
             dlist.append(blist)
             dlist.append(alist)
-    print dlist
+    return dlist
     pass
 test(zadanie3, [(1, 3), (3, 3, 2), (2, 1)], [(2, 1), (3, 3, 2), (1, 3)])
