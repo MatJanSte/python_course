@@ -213,6 +213,22 @@
 #     pass
 # zadanie3([(1, 3), (3, 3, 2), (2, 1)])
 # #test(zadanie3, [(1, 3), (3, 3, 2), (2, 1)], [(2, 1), (3, 3, 2), (1, 3)])
-def zadanie4(text):
-    return str("".join([i[:i.find("$")] + " " for i in text.split("ok")])).strip()
-print zadanie4("okmy$aiaetiaigaafbaf??a$okwatch$oafbusd$okhas$asbrsi31480$okended$aq340af")
+# def zadanie4(text):
+#     return str("".join([i[:i.find("$")] + " " for i in text.split("ok")])).strip()
+# print zadanie4("okmy$aiaetiaigaafbaf??a$okwatch$oafbusd$okhas$asbrsi31480$okended$aq340af")
+from random import randint
+def zadanie5():
+    b = randint(1,9)
+    a = input("Podaj liczbe:\n")
+    print "Podales " + str(a)
+    if a == b:
+        print "\nWygrana Gratulacje, wylosowane liczba przez komputer to: " + str(b)
+    else:
+        print "\nSzkoda nie trafiony, komputer wskazuje:" + str(b)
+        los()
+        pass
+    pass
+pass
+zadanie5()
+
+
