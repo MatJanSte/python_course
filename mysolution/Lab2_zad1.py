@@ -102,3 +102,7 @@ def zadanie3(listTuples):
     return dlist
     pass
 test(zadanie3, [(1, 3), (3, 3, 2), (2, 1)], [(2, 1), (3, 3, 2), (1, 3)])
+########################################################################
+def zadanie4(text):
+    return str("".join([i[:i.find("$")] + " " for i in text.split("ok")])).strip()
+test(zadanie4, "okmy$aiaetiaigaafbaf??a$okwatch$oafbusd$okhas$asbrsi31480$okended$aq340af", [109, 121, 32, 119, 97, 116, 99, 104, 32, 104, 97, 115, 32, 101, 110, 100, 101, 100])
