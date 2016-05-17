@@ -29,7 +29,7 @@ def zadanie1(listObject):
 pass
 
 test(zadanie1, [1, 2, 3, 3, 5, 68, 68, 24], [1, 2, 3, 5, 68, 24])
-
+###############################################################################################
 def zadanie2(list1, list2):
     # type your code
     x = 0
@@ -65,3 +65,40 @@ def zadanie2(list1, list2):
     return clist
 pass
 test(zadanie2, [1, 2, 19, 'dd', ':P', ":("], [12, 'c', '5'], [1, 12, 2, 'c', 19, '5', 1, 2, 19, 'dd', ':P', ':('])
+####################################################################################################3
+def zadanie3(listTuples):
+    # type your code
+    alist, blist, clist = listTuples
+    a = len(alist) - 1
+    b = len(blist) - 1
+    c = len(clist) - 1
+    dlist = []
+    if alist[a] < blist[b]:
+        if alist[a] < clist[c]:
+            dlist.append(alist)
+            if clist[c] < blist[b]:
+                dlist.append(clist)
+                dlist.append(blist)
+            else:
+                dlist.append(blist)
+                dlist.append(clist)
+        else:
+            dlist.append(clist)
+            dlist.append(alist)
+            dlist.append(blist)
+    else:
+        if blist[b] < clist[c]:
+            dlist.append(blist)
+            if alist[a] < clist[c]:
+                dlist.append(alist)
+                dlist.append(clist)
+            else:
+                dlist.append(clist)
+                dlist.append(alist)
+        else:
+            dlist.append(clist)
+            dlist.append(blist)
+            dlist.append(alist)
+    print dlist
+    pass
+test(zadanie3, [(1, 3), (3, 3, 2), (2, 1)], [(2, 1), (3, 3, 2), (1, 3)])
